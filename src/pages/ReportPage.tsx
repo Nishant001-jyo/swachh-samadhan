@@ -170,7 +170,7 @@ export default function ReportPage() {
         location_address: locationName,
         citizen_name: citizenName || null,
         citizen_phone: citizenPhone || null,
-        ai_analysis: { raw: result },
+        ai_analysis: JSON.parse(JSON.stringify({ raw: result })),
       }]);
 
       if (error) throw error;
