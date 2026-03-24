@@ -156,7 +156,7 @@ export default function ReportPage() {
         }
       }
 
-      const { error } = await supabase.from("complaints").insert({
+      const { error } = await supabase.from("complaints").insert([{
         complaint_id: result.complaintId,
         problem_type: result.problemType,
         severity: result.severity,
