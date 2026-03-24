@@ -171,7 +171,7 @@ export default function ReportPage() {
         citizen_name: citizenName || null,
         citizen_phone: citizenPhone || null,
         ai_analysis: { raw: result },
-      });
+      }]);
 
       if (error) throw error;
 
