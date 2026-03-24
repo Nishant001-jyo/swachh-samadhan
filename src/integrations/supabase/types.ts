@@ -14,7 +14,72 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      complaints: {
+        Row: {
+          ai_analysis: Json | null
+          citizen_name: string | null
+          citizen_phone: string | null
+          complaint_id: string
+          confidence: number
+          created_at: string
+          department: string
+          description: string | null
+          id: string
+          image_url: string | null
+          location_address: string | null
+          location_lat: number | null
+          location_lng: number | null
+          priority: string
+          problem_type: string
+          resolved_at: string | null
+          severity: string
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          ai_analysis?: Json | null
+          citizen_name?: string | null
+          citizen_phone?: string | null
+          complaint_id: string
+          confidence?: number
+          created_at?: string
+          department: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          location_address?: string | null
+          location_lat?: number | null
+          location_lng?: number | null
+          priority: string
+          problem_type: string
+          resolved_at?: string | null
+          severity: string
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          ai_analysis?: Json | null
+          citizen_name?: string | null
+          citizen_phone?: string | null
+          complaint_id?: string
+          confidence?: number
+          created_at?: string
+          department?: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          location_address?: string | null
+          location_lat?: number | null
+          location_lng?: number | null
+          priority?: string
+          problem_type?: string
+          resolved_at?: string | null
+          severity?: string
+          status?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
